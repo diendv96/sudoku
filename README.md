@@ -2,5 +2,5 @@
 Game Sudoku on Console (C++)
 
 #Team
-*Đặng Văn Diện
-Nguyễn Đăng Đại
+* Đặng Văn Diện
+* Nguyễn Đăng Đại

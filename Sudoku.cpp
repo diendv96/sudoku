@@ -63,16 +63,18 @@ void Sudoku::resetBoard(int *count)
 void Sudoku::handleInput(int *row, int *col, int *value)
 	{
 		int i=0;
-			do{
-				if( i != 0 ){
-					cout << "Invalid column/ row index.\n"
-                         <<	"Please try again\n";
-				}
-				cout << "Enter row / column / value : ";
-				cin >> *row >> *col >> *value;
-				i=1;
-			} while ( !((*row>= 0 && *row<9) && (*col>= 0 && *col<9)
+        do {
+            if( i != 0 ){
+                cout << "Invalid column/ row index.\n"
+                     <<	"Please try again\n";
+            }
+            cout << "Enter row / column / value : ";
+            cin >> *row >> *col >> *value;
+            i=1;
+        } while ( !((*row> 0 && *row<=9) && (*col> 0 && *col<=9)
 					&& (*value> 0 && *value<=9)));
+        *row -=1;
+        *col -=1;
 	}
 int Sudoku::checkRow(int row, int value)
 	{

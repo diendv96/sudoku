@@ -141,7 +141,7 @@ void Sudoku::run()
 	    int value;
 	    int ret;
 	    int count;
-		// variable nécessaire pour arreter le jeu.
+		// Initialize some essential variables
 	    resetBoard(&count);
 	    showBoard();
 
@@ -153,7 +153,7 @@ void Sudoku::run()
 				showBoard();
 				count++;
 			}else{
-				printf("\nCombinaison non valide\n");
+				printf("\nInvalid Value Pairs.\n");
 			}
 		}
 	}

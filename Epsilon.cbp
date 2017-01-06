@@ -32,7 +32,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="Epsilon.cpp" />
+		<Unit filename="Sudoku.cpp" />
+		<Unit filename="Sudoku.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

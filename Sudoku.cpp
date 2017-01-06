@@ -1,4 +1,5 @@
 #include "Sudoku.h"
+#include<cstdlib>
 
 Sudoku::Sudoku()
 	{
@@ -67,12 +68,8 @@ void Sudoku::handleInput(int *row, int *col, int *value)
 					cout << "Invalid column/ row index.\n"
                          <<	"Please try again\n";
 				}
-				cout << "Enter line number index : ";
-				cin >> *row;
-				cout << "Enter column number index : ";
-				cin >> *col;
-				cout << "Enter value you want to fill : ";
-				cin >> *value;
+				cout << "Enter row / column / value : ";
+				cin >> *row >> *col >> *value;
 				i=1;
 			} while ( !((*row>= 0 && *row<9) && (*col>= 0 && *col<9)
 					&& (*value> 0 && *value<=9)));
@@ -148,6 +145,7 @@ void Sudoku::run()
 			handleInput( &row, &col, &value );
 			ret = upateBoard( row, col, value );
 			if( ret == 1 ){
+                system("cls");
 				showBoard();
 				count++;
 			}else{

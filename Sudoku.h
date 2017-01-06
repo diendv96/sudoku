@@ -1,8 +1,9 @@
 #ifndef SUDOKU_H_INCLUDED
 #define SUDOKU_H_INCLUDED
 
-#include<cstdio>
-#include<cstdlib>
+#include<iostream>
+
+using namespace std;
 
 class Sudoku {
 private:

@@ -20,33 +20,31 @@ void Sudoku::showBoard()
 	{
 		int i, j;
 			int k;
-			printf("\n");
-
+			cout << "\n";
 			for( i=0; i<N; i++ )
 			{
 				for(k=0; k <= 4*N; k++ )
 				{
-					printf("-");
+					cout << "-";
 				}
-				printf("\n|");
+				cout << "\n|";
 			    for( j=0; j<N; j++ )
 				{
 					if( matrix[i][j] == 0 )
 					{
-						printf("   |");
+						cout << "   |";
 					} else
 					{
-						printf(" %d |", matrix[i][j]);
+					    cout << " " << matrix[i][j] << " |";
 					}
-
 					}
-					printf("\n");
+					cout << "\n";
 				}
 				for(k=0; k<=4*N; k++ )
 				{
-					printf("-");
+					cout << "-";
 				}
-				printf("\n");
+				cout << "\n";
 
 				return;
 	}
@@ -66,17 +64,17 @@ void Sudoku::handleInput(int *row, int *col, int *value)
 		int i=0;
 			do{
 				if( i != 0 ){
-					printf("Invalid column/ row index.\n"
-							"Please try again\n");
+					cout << "Invalid column/ row index.\n"
+                         <<	"Please try again\n";
 				}
-				printf("Enter line number index : ");
-				scanf("%d", row);
-				printf("Enter column number index : ");
-				scanf("%d", col);
-				printf("Enter value you want to fill : ");
-				scanf("%d", value);
+				cout << "Enter line number index : ";
+				cin >> *row;
+				cout << "Enter column number index : ";
+				cin >> *col;
+				cout << "Enter value you want to fill : ";
+				cin >> *value;
 				i=1;
-			}while( !((*row>= 0 && *row<9) && (*col>= 0 && *col<9)
+			} while ( !((*row>= 0 && *row<9) && (*col>= 0 && *col<9)
 					&& (*value> 0 && *value<=9)));
 	}
 int Sudoku::checkRow(int row, int value)
@@ -153,7 +151,7 @@ void Sudoku::run()
 				showBoard();
 				count++;
 			}else{
-				printf("\nInvalid Value Pairs.\n");
+				cout << "\nInvalid Value Pairs.\n";
 			}
 		}
 	}

@@ -18,37 +18,37 @@ Sudoku::~Sudoku()
         delete[] matrix;
 	}
 void Sudoku::showBoard()
-	{
-		int i, j;
-			int k;
-			cout << "\n";
-			for( i=0; i<N; i++ )
-			{
-				for(k=0; k <= 4*N; k++ )
-				{
-					cout << "-";
-				}
-				cout << "\n|";
-			    for( j=0; j<N; j++ )
-				{
-					if( matrix[i][j] == 0 )
-					{
-						cout << "   |";
-					} else
-					{
-					    cout << " " << matrix[i][j] << " |";
-					}
-					}
-					cout << "\n";
-				}
-				for(k=0; k<=4*N; k++ )
-				{
-					cout << "-";
-				}
-				cout << "\n";
+{
+    int i, j;
+        int k;
+        cout << "\n";
+        for( i=0; i<N; i++ )
+        {
+            for(k=0; k <= 4*N; k++ )
+            {
+                cout << "-";
+            }
+            cout << "\n|";
+            for( j=0; j<N; j++ )
+            {
+                if( matrix[i][j] == 0 )
+                {
+                    cout << "   |";
+                } else
+                {
+                    cout << " " << matrix[i][j] << " |";
+                }
+                }
+                cout << "\n";
+            }
+            for(k=0; k<=4*N; k++ )
+            {
+                cout << "-";
+            }
+            cout << "\n";
 
-				return;
-	}
+            return;
+}
 void Sudoku::resetBoard(int *count)
 	{
 		*count = 0;
@@ -137,7 +137,7 @@ void Sudoku::run()
         int row, col;
 	    int value;
 	    int ret;
-	    int count;
+	     int count;
 		// Initialize some essential variables
 	    resetBoard(&count);
 	    showBoard();

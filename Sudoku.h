@@ -1,6 +1,5 @@
 #ifndef SUDOKU_H_INCLUDED
 #define SUDOKU_H_INCLUDED
-
 #include<iostream>
 
 using namespace std;

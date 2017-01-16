@@ -3,9 +3,9 @@
 
 using namespace std;
 
-int main(void)
-{
+int main(void){
+
 	Sudoku game;
-	game.run();
-    return 0;
+	game.Run();
+	return 0;
 }

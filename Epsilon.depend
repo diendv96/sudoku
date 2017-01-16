@@ -1,12 +1,16 @@
 # depslib dependency file v1.0
-1483701353 source:e:\c++\epsilon\epsilon.cpp
+1484554447 source:e:\c++\epsilon\epsilon.cpp
 	<iostream>
 	"Sudoku.h"
 
-1484229735 e:\c++\epsilon\sudoku.h
+1484554447 e:\c++\epsilon\sudoku.h
 	<iostream>
+	<cmath>
+	<bitset>
+	<cstdlib>
 
-1484228763 source:e:\c++\epsilon\sudoku.cpp
+1484550154 source:e:\c++\epsilon\sudoku.cpp
 	"Sudoku.h"
 	<cstdlib>
+	<bitset>
 
